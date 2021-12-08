@@ -139,72 +139,71 @@ header nav .contact:hover {
 }
 
 #home {
+  width: 100%;
+  overflow: hidden;
   height: 100vh;
   display: -ms-grid;
   display: grid;
   place-items: center;
-  background-color: #1a1b4b;
-}
-
-#home .container {
-  display: -ms-grid;
-  display: grid;
-  -ms-grid-columns: 2fr 1fr;
-      grid-template-columns: 2fr 1fr;
+  background-color: #000000;
+  background-image: url(../images/yeah.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
   color: white;
 }
 
-#home .container #intro {
+#home #intro {
   font-family: "Poppins", sans-serif;
   position: relative;
 }
 
-#home .container #intro #hi .intro-after {
-  font-size: 100px;
+#home #intro #hi .intro-after {
+  font-size: 8vw;
   font-weight: 500;
   color: #3a9efd;
 }
 
-#home .container #intro #welcome .intro-after {
-  font-size: 50px;
+#home #intro #welcome .intro-after {
+  font-size: 3.3vw;
   font-weight: 400;
 }
 
-#home .container #intro #name .intro-after {
-  font-size: 50px;
+#home #intro #name .intro-after {
+  font-size: 3.3vw;
   font-weight: 400;
 }
 
-#home .container #intro #name .intro-after span {
+#home #intro #name .intro-after span {
   font-family: "Montserrat", sans-serif;
 }
 
-#home .container #intro #pro .intro-after {
-  font-size: 45px;
+#home #intro #pro .intro-after {
+  font-size: 3vw;
   font-weight: 400;
 }
 
-#home .container #intro #pro .intro-after span {
+#home #intro #pro .intro-after span {
   color: #f7a400;
 }
 
-#home .container #intro #pro .intro-after span:after {
+#home #intro #pro .intro-after span:after {
   content: "|";
   margin-left: 5px;
   -webkit-animation: cursoranimation 0.2s ease 0 infinite;
           animation: cursoranimation 0.2s ease 0 infinite;
 }
 
-#home .container #intro #int .intro-after {
-  font-size: 30px;
+#home #intro #int .intro-after {
+  font-size: 2.3vw;
 }
 
-#home .container #intro .cta {
+#home #intro .cta {
   display: inline-block;
   color: white;
   text-decoration: none;
-  font-size: 20px;
-  padding: 7px 15px;
+  font-size: 25px;
+  padding: 10px 18px;
   background-color: #3a9efd;
   margin: 20px auto;
   -webkit-transition: -webkit-box-shadow 0.2s ease;
@@ -212,33 +211,18 @@ header nav .contact:hover {
   transition: box-shadow 0.2s ease;
   transition: box-shadow 0.2s ease, -webkit-box-shadow 0.2s ease;
   font-weight: 600;
+  border-radius: 7px;
 }
 
-#home .container #intro .cta:hover {
+#home #intro .cta:hover {
   color: #1a1b4b;
-  -webkit-box-shadow: 1px 2px 10px #3a9efd,-1px -2px 10px #3a9efd;
-          box-shadow: 1px 2px 10px #3a9efd,-1px -2px 10px #3a9efd;
+  -webkit-box-shadow: 1px 2px 10px #3a9efd, -1px -2px 10px #3a9efd;
+          box-shadow: 1px 2px 10px #3a9efd, -1px -2px 10px #3a9efd;
   font-weight: 600;
 }
 
-#home .container #intro p .intro-after {
+#home #intro p .intro-after {
   display: block;
-}
-
-#home .container #intro p .intro-after::after {
-  content: "";
-  position: absolute;
-  width: 100%;
-  left: 0;
-  background-color: #1a1b4b;
-  z-index: 1;
-  height: 30%;
-  -webkit-transform-origin: 100% 0;
-          transform-origin: 100% 0;
-  -webkit-animation: intro-anime 1.5s ease 1s;
-          animation: intro-anime 1.5s ease 1s;
-  -webkit-animation-fill-mode: forwards;
-          animation-fill-mode: forwards;
 }
 
 @-webkit-keyframes cursoranimation {

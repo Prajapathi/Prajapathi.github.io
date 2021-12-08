@@ -20,7 +20,7 @@ setTimeout(() => {
         strings: ['Bio Technology Undergrad...',
             'Full Stack Web Developer...',
             'Data scientist...',
-            'Competitive Coding'],
+            'Competitive Coder'],
         smartBackspace: true,
         typeSpeed: 75,
         backspeed: 50,
@@ -30,7 +30,7 @@ setTimeout(() => {
         loopCount: Infinity,
         showCursor: false
     });
-}, 2800);
+}, 1000);
 
 //header styling
 const header = document.querySelector('header');

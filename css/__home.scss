@@ -1,145 +1,144 @@
 @import "__variables";
 
-#home{
-    height: 100vh;
-    display: grid;
-    place-items: center;
-    background-color: $bgc;
+#home {
+  width: 100%;
+  overflow: hidden;
+  height: 100vh;
+  display: grid;
+  place-items: center;
+  background-color: #000000;
+  //   background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url(../images/yeah.jpg);
+  background-attachment: fixed;
+  background-size: cover;
+  text-align: center;
+  color: white;
 
-    .container{
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        color: white;
-        
+  #intro {
+    font-family: "Poppins", sans-serif;
+    position: relative;
 
-        #intro{
-            font-family: "Poppins", sans-serif;
-            position: relative;
-            
-            #hi{
-
-                .intro-after{
-                    font-size: 100px;
-                    font-weight: 500;
-                    color: #3a9efd;
-                }
-            }
-            
-            #welcome{
-                .intro-after{
-                    font-size: 50px;
-                    font-weight: 400;
-                }
-            }
-
-            #name{
-                .intro-after{
-                    font-size: 50px;
-                    font-weight: 400;
-
-                    span{
-                        font-family: "Montserrat", sans-serif;
-                    }
-                }
-            }
-
-            #pro{
-                .intro-after{
-                    font-size: 45px;
-                    font-weight: 400;
-    
-                    span{
-                        color: #f7a400;
-                        &:after{
-                            content: "|";
-                            margin-left: 5px;
-                            animation: cursoranimation 0.2s ease 0 infinite;
-                        }
-                    }
-                }
-            }
-
-            #int{
-
-                .intro-after{
-                    font-size: 30px;
-                }
-            }
-
-            .cta{
-                display: inline-block;
-                color: white;
-                text-decoration: none;
-                font-size: 20px;
-                padding: 7px 15px;
-                background-color: #3a9efd;
-                margin: 20px auto;
-                transition: box-shadow 0.2s ease;
-                font-weight: 600;
-
-                &:hover{
-                    color: $bgc;
-                    box-shadow: 1px 2px 10px #3a9efd,-1px -2px 10px #3a9efd;
-                    font-weight: 600;
-                }
-                
-            }
-            
-            p{
-                .intro-after{
-                    display: block;
-                    
-                    &::after{
-                    content: "";
-                    position: absolute;
-                    width: 100%;
-                    left: 0;
-                    background-color: $bgc;
-                    z-index: 1;
-                    height: 30%;
-                    transform-origin: 100% 0;
-                    animation: intro-anime 1.5s ease 1s;
-                    animation-fill-mode: forwards;
-                    }
-                }
-            }
-        }
+    #hi {
+      .intro-after {
+        font-size: 8vw;
+        font-weight: 500;
+        color: #3a9efd;
+      }
     }
+
+    #welcome {
+      .intro-after {
+        font-size: 3.3vw;
+        font-weight: 400;
+      }
+    }
+
+    #name {
+      .intro-after {
+        font-size: 3.3vw;
+        font-weight: 400;
+
+        span {
+          font-family: "Montserrat", sans-serif;
+        }
+      }
+    }
+
+    #pro {
+      .intro-after {
+        font-size: 3vw;
+        font-weight: 400;
+
+        span {
+          color: #f7a400;
+          &:after {
+            content: "|";
+            margin-left: 5px;
+            animation: cursoranimation 0.2s ease 0 infinite;
+          }
+        }
+      }
+    }
+
+    #int {
+      .intro-after {
+        font-size: 2.3vw;
+      }
+    }
+
+    .cta {
+      display: inline-block;
+      color: white;
+      text-decoration: none;
+      font-size: 25px;
+      padding: 10px 18px;
+      background-color: #3a9efd;
+      margin: 20px auto;
+      transition: box-shadow 0.2s ease;
+      font-weight: 600;
+      border-radius: 7px;
+
+      &:hover {
+        color: $bgc;
+        box-shadow: 1px 2px 10px #3a9efd, -1px -2px 10px #3a9efd;
+        font-weight: 600;
+      }
+    }
+
+    p {
+      .intro-after {
+        display: block;
+
+        //   &::after {
+        //     content: "";
+        //     position: absolute;
+        //     width: 100%;
+        //     left: 0;
+        //     background-color: transparent;
+        //     z-index: 1;
+        //     height: 30%;
+        //     transform-origin: 100% 0;
+        //     animation: intro-anime 1.5s ease 1s;
+        //     animation-fill-mode: forwards;
+        //   }
+      }
+    }
+  }
 }
 
 //animations
-@keyframes cursoranimation{
-    0%{
-        opacity: 0;
-        content: "";
-    }
+@keyframes cursoranimation {
+  0% {
+    opacity: 0;
+    content: "";
+  }
 
-    10%{
-        opacity: 0.1;
-        content: "|";
-    }
+  10% {
+    opacity: 0.1;
+    content: "|";
+  }
 
-    100%{
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
 
-@keyframes intro-anime{
-    0%{
-        height: 30%;
-    }
+@keyframes intro-anime {
+  0% {
+    height: 30%;
+  }
 
-    100%{
-        height: 0%;
-    }
+  100% {
+    height: 0%;
+  }
 }
 
-@keyframes cta-anime{
-    0%{
-        opacity: 0;
-    }
+@keyframes cta-anime {
+  0% {
+    opacity: 0;
+  }
 
-    100%{
-        opacity: 1;
-    }
+  100% {
+    opacity: 1;
+  }
 }
