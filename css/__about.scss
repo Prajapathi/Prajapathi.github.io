@@ -1,0 +1,43 @@
+@import "__variables";
+
+#about {
+  background-color: $aboutcolor;
+
+  .container {
+    height: 100vh;
+    margin: auto;
+    color: whitesmoke;
+    text-align: center;
+    display: grid;
+    place-items: center;
+
+    .wrap {
+      flex-wrap: wrap;
+      
+      h2 {
+        font-family: "Raleway", sans-serif;
+        font-size: 30px;
+        margin-bottom: 20px;
+      }
+
+      p {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 20px;
+        line-height: 30px;
+
+        a {
+          color: $typecolor;
+          text-decoration: none;
+
+          &:hover {
+            text-decoration: underline;
+          }
+        }
+
+        span {
+          color: $typecolor;
+        }
+      }
+    }
+  }
+}

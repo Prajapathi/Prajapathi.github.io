@@ -1,0 +1,113 @@
+@import "__variables";
+
+#projects {
+  background-color: $aboutcolor;
+  display: grid;
+  place-items: center;
+
+  .container {
+    margin-top: 12vh;
+    margin-bottom: 20vh;
+
+    h2 {
+      color: $typecolor;
+      position: sticky;
+      top: 0;
+      font-family: "Montserrat", sans-serif;
+      font-weight: 500;
+      font-size: 40px;
+      text-align: center;
+      padding: 3vh 0 4vh 0;
+      background-color: $aboutcolor;
+      // box-shadow: 0px 2px 10px $bgc;
+    }
+
+    .project {
+      margin: 10vh auto;
+      width: 95%;
+      display: grid;
+      grid-template-columns: 3.5fr 1.5fr;
+      height: 35vh;
+      box-shadow: 0px 1px 5px black;
+      
+      &:nth-of-type(2n){
+        grid-template-columns: 1.5fr 3.5fr;
+
+        .pro-txt{
+          text-align: left;
+          border-left: 0px solid #000;
+          border-right: 3px solid $typecolor;
+
+          .tools{
+            margin-left: 0;
+          }
+        }
+
+        a{
+          grid-row: 1/2;
+
+          img{
+            float: left;
+          }
+        }
+      }
+
+      .pro-txt {
+        text-align: right;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        padding-left: 10px;
+        border-left: 3px solid $typecolor;
+
+        h3 {
+          color: $fontcolor;
+          font-size: 25px;
+          font-family: "Ubuntu", sans-serif;
+          font-weight: 500;
+        }
+
+        p {
+          color: white;
+          font-family: "Poppins";
+          line-height: 1.2em;
+          margin: 10px auto;
+        }
+
+        .tools {
+          margin-right: 0px;
+          display: flex;
+          justify-content: end;
+
+          span {
+            display: block;
+            margin: auto 4px;
+            padding: auto 4px;
+            background-color: $fontcolor;
+            color: $bgc;
+            font-weight: 600;
+          }
+        }
+      }
+
+      // .pro-img{
+      //   width: 100%;
+      //   height: 100%;
+
+      //   img{
+      //     width: 100%;
+      //     height: 100%;
+      //   }
+      // }
+
+      .pro-img {
+        
+        img {
+          width: 95%;
+          height: 35vh;
+          float: right;
+        }
+      }
+    }
+  }
+}

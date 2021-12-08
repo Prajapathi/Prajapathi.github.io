@@ -1,0 +1,100 @@
+@import "__variables";
+
+#contact {
+  height: 60vh;
+  display: grid;
+  place-items: center;
+  background-color: $bgc;
+
+  .container {
+    margin-top: 10vh;
+    height: 30vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 30px;
+
+    article {
+      text-align: center;
+      display: flex;
+      margin: 40px auto;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+
+      .icon {
+        width: 60px;
+        height: 60px;
+        border-radius: 50%;
+        background-color: #3a9efd;
+        line-height: 60px;
+        font-size: 21px;
+
+        &:hover{
+          box-shadow: 0px 0px 10px 2px #3a9efd;
+
+          i{
+            transform: translateY(-5px) scale(1.4);
+          }
+        }
+
+        i {
+          transition: all 0.2s ease;
+        }
+      }
+
+      div {
+        h3 {
+          font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS",
+            sans-serif;
+          font-size: 25px;
+          font-weight: 400;
+          color: $fontcolor;
+          margin: 5px auto;
+        }
+
+        p {
+          font-family: "Raleway";
+          font-size: 16px;
+          font-weight: 500;
+          color: $typecolor;
+          margin: 5px auto;
+
+          a {
+            font-size: 17px;
+            font-weight: 500;
+            text-decoration: none;
+            color: $typecolor;
+            margin: 5px auto;
+          }
+        }
+      }
+    }
+  }
+}
+
+// @keyframes phoneanime{
+//     0%{
+//         transform: scale(1.2);
+//         transform: rotate(0deg);
+//     }
+
+//     25%{
+//         transform: scale(1.5);
+//         transform: rotate(-45deg);
+//     }
+
+//     50%{
+//         transform: scale(1.8);
+//         transform: rotate(0deg);
+//     }
+
+//     75%{
+//         transform: scale(1.5);
+//         transform: rotate(-45deg);
+//     }
+
+//     100%{
+//         transform: scale(1.2);
+//         transform: rotate(0deg);
+//     }
+// }
