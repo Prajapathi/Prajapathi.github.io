@@ -20,7 +20,7 @@
 
     #hi {
       .intro-after {
-        font-size: 8vw;
+        font-size: clamp(25px, 8.5vw, 100px);
         font-weight: 500;
         color: #3a9efd;
       }
@@ -28,14 +28,14 @@
 
     #welcome {
       .intro-after {
-        font-size: 3.3vw;
+        font-size: clamp(20px, 3.5vw, 50px);
         font-weight: 400;
       }
     }
 
     #name {
       .intro-after {
-        font-size: 3.3vw;
+        font-size: clamp(20px, 3.5vw, 50px);
         font-weight: 400;
 
         span {
@@ -46,7 +46,7 @@
 
     #pro {
       .intro-after {
-        font-size: 3vw;
+        font-size: clamp(18px, 3.2vw, 45px);
         font-weight: 400;
 
         span {
@@ -62,7 +62,7 @@
 
     #int {
       .intro-after {
-        font-size: 2.3vw;
+        font-size: clamp(16px, 2.5vw, 30px);
       }
     }
 
@@ -70,13 +70,13 @@
       display: inline-block;
       color: white;
       text-decoration: none;
-      font-size: 1.5vw;
-      padding: 0.7vw 1.1vw;
+      font-size: clamp(16px, 1.7vw, 20px);
+      padding: 0.8vw 1.3vw;
       background-color: #3a9efd;
-      margin: 20px auto;
+      margin: 1.7vw auto;
       transition: box-shadow 0.2s ease;
       font-weight: 600;
-      border-radius: 7px;
+      border-radius: 0.5vw;
 
       &:hover {
         color: $bgc;
