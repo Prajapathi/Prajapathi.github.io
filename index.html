@@ -12,7 +12,10 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css"
         integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA=="
         crossorigin="anonymous" />
-    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css" />
+    <link href="https://unpkg.com/pattern.css" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/particlesjs/2.2.2/particles.min.js"></script>
+
 </head>
 
 <body>
@@ -50,6 +53,7 @@
 
     <section id="home">
         <div id="intro">
+
             <p id="hi"><span class="intro-after">&lt&#33&#45&#45Hi&#45&#45&gt</span></p>
             <p id="welcome"><span class="intro-after">Welcome to My Site</span></p>
             <p id="name"><span class="intro-after">My Name is <span>Syam Yadavalli</span></span></p>
@@ -62,8 +66,8 @@
 
     <section id="about">
         <div class="container">
-            <div class="wrap">
-                <h2>About Me</h2>
+            <h2>About Me</h2>
+            <div>
                 <p>Hello, I am <span>Syam Kumar Yadavalli</span></p>
                 <p>I'm currently pursuing my third year undergraduation in
                     <span>BioTechnology</span> at
@@ -84,11 +88,46 @@
                     I am currently working on <span>Django</span> For Back-end Web Development <br /> and Practising
                     <span>React</span> to master the
                     Front-End Web Development.<br>
+
                 </p>
             </div>
+            <div class="wrap">
+                <div class="edu">
+                    <h2>Education</h2>
+                    <div class="study">
+                        <h3 class="college">National Institute of Technology, Raipur</h3>
+                        <span class="cgpa">CGPA : 7.79</span>
+                        <p class="course">Bachelor of Technology</p>
+                        <p class="branch">Biotechnology enginering</p>
+                    </div>
+                    <div class="study">
+                        <h3 class="college">Narayana Junior College</h3>
+                        <span class="cgpa">Percentage : 94%</span>
+                        <p class="course">Intermediate</p>
+                        <p class="branch">M.P.C</p>
+                    </div>
+                </div>
+                <div class="work">
+                    <h2>Work Experience</h2>
+                    <div class="study">
+                        <h3 class="college">National Institute of Technology, Raipur</h3>
+                        <span class="cgpa">CGPA : 7.79</span>
+                        <p class="course">Bachelor of Technology</p>
+                        <p class="branch">Biotechnology enginering</p>
+                    </div>
+                    <div class="study">
+                        <h3 class="college">Narayana Junior College</h3>
+                        <span class="cgpa">Percentage : 94%</span>
+                        <p class="course">Intermediate</p>
+                        <p class="branch">M.P.C</p>
+                    </div>
+
+                </div>
+            </div>
+            <!-- </div> -->
         </div>
     </section>
-    <!-- <section id="third"></section>
+    <section id="third"></section>
     <section id="skills">
         <div id="python" class="skill">Python</div>
         <div id="js" class="skill"> <span>Java</span><span>Script</span></div>
@@ -107,52 +146,52 @@
         <div id="skill-circle">skills</div>
     </section>
 
-    <section id="projects">
-        <div class="container">
-            <h2>Here are Some of My Works</h2>
-            <div class="project">
-                <div class="pro-txt">
-                    <h3>This Site</h3>
-                    <p>I built this site on my own, without using any extra tools, all by pure code and a few java
-                        script libraries.
-                        building this site helped me to revise the concepts of front-end technologies.
-                        although i didn't use react to build the site, because i thought that as a small static site
-                        using react migt be unnecessary.</p>
-                    <p class="tools"><span>HTML</span>
-                        <span>CSS</span>
-                        <span>Java Script</span>
-                        <span>Typed.js</span>
-                        <span>GSAP</span>
-                        <span>Scroll Magic</span>
-                    </p>
-                </div>
-                <a href="index.html" class="pro-img"><img src="./images/firstpage.png" alt="" srcset=""></a>
-            </div>
-            <div class="project">
-                <div class="pro-txt">
-                    <h3>Fully Functioning Iron Man Suit</h3>
-                    <p>I built this suit when i was working with Mr. Stark on avangers mission back in the day.
-                        this was developed based on the technologies that were used in previous Mark's such as Mark 42
-                        "The Prodigal son" and mark 48 which is Hulkbuster II.
-                        it was built with pure vibranium, thus has the capability of nano-tech.
-                        it's working name is Mark 85.
-                        Apparantly it was shut down, though fully operatable, due to the demise of Mr.Stark</p>
-                    <p class="tools">
-                        <span>Vibranium</span>
-                        <span>Arc Reactor</span>
-                        <span>Friday</span>
-                        <span>EDITH</span>
-                        <span>Nano-Tech</span>
-                    </p>
-                </div>
-                <a href="https://www.youtube.com/watch?v=PsSyd7qCXsU" target="_blank" class="pro-img"><img
-                        src="./images/ironman.jpg" alt="iron man suit"></a>
-            </div>
-            <div class="project">
-                <div></div>
-                <a href=""><img src="" alt=""></a>
-            </div>
-            <div class="project">
+    <!--<section id="projects">
+            <div class="container">
+                <h2>Here are Some of My Works</h2>
+                <div class="project">
+                    <div class="pro-txt">
+                        <h3>This Site</h3>
+                        <p>I built this site on my own, without using any extra tools, all by pure code and a few java
+                            script libraries.
+                            building this site helped me to revise the concepts of front-end technologies.
+                            although i didn't use react to build the site, because i thought that as a small static site
+                            using react migt be unnecessary.</p>
+                            <p class="tools"><span>HTML</span>
+                                <span>CSS</span>
+                                <span>Java Script</span>
+                                <span>Typed.js</span>
+                                <span>GSAP</span>
+                                <span>Scroll Magic</span>
+                            </p>
+                        </div>
+                        <a href="index.html" class="pro-img"><img src="./images/firstpage.png" alt="" srcset=""></a>
+                    </div>
+                    <div class="project">
+                        <div class="pro-txt">
+                            <h3>Fully Functioning Iron Man Suit</h3>
+                            <p>I built this suit when i was working with Mr. Stark on avangers mission back in the day.
+                                this was developed based on the technologies that were used in previous Mark's such as Mark 42
+                                "The Prodigal son" and mark 48 which is Hulkbuster II.
+                                it was built with pure vibranium, thus has the capability of nano-tech.
+                                it's working name is Mark 85.
+                                Apparantly it was shut down, though fully operatable, due to the demise of Mr.Stark</p>
+                                <p class="tools">
+                                    <span>Vibranium</span>
+                                    <span>Arc Reactor</span>
+                                    <span>Friday</span>
+                                    <span>EDITH</span>
+                                    <span>Nano-Tech</span>
+                                </p>
+                            </div>
+                            <a href="https://www.youtube.com/watch?v=PsSyd7qCXsU" target="_blank" class="pro-img"><img
+                                src="./images/ironman.jpg" alt="iron man suit"></a>
+                            </div>
+                            <div class="project">
+                                <div></div>
+                                <a href=""><img src="" alt=""></a>
+                            </div>
+                            <div class="project">
                 <div></div>
                 <a href=""><img src="" alt=""></a>
             </div>
@@ -212,8 +251,26 @@
         </div>
     </footer> -->
     <div class="toast">This site is still under construction</div>
+    <canvas class="background"></canvas>
+    <script src="path/to/particles.min.js"></script>
     <script src="https://s3-us-west-2.amazonaws.com/s.cdpn.io/16327/gsap-latest-beta.min.js"></script>
     <script src="./js/app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.11"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r121/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/vanta@latest/dist/vanta.globe.min.js"></script>
+    <script>
+        VANTA.GLOBE({
+            el: "#home",
+            mouseControls: true,
+            touchControls: true,
+            gyroControls: false,
+            minHeight: 200.00,
+            minWidth: 200.00,
+            scale: 1.00,
+            scaleMobile: 1.00
+        })
+    </script>
 </body>
 
 </html>

@@ -291,51 +291,107 @@ header nav .contact:hover {
 
 #about {
   background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23000449' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23001053' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%230c185d' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%231c2168' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23292A73' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
+  min-height: 100vh;
+  color: whitesmoke;
+}
+
+#about h2 {
+  font-family: "Raleway", sans-serif;
+  font-size: 30px;
+  margin-left: 10px;
 }
 
 #about .container {
-  height: 100vh;
-  margin: auto;
-  color: whitesmoke;
-  text-align: center;
-  display: -ms-grid;
-  display: grid;
-  place-items: center;
-}
-
-#about .container .wrap {
+  height: 100%;
+  padding: 5vh 5vw;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin: auto;
 }
 
-#about .container .wrap h2 {
-  font-family: "Raleway", sans-serif;
-  font-size: 30px;
-  margin-bottom: 20px;
-}
-
-#about .container .wrap p {
+#about .container p {
   font-family: "Ubuntu", sans-serif;
   font-size: 20px;
   line-height: 30px;
 }
 
-#about .container .wrap p a {
+#about .container p a {
   color: #f7a400;
   text-decoration: none;
 }
 
-#about .container .wrap p a:hover {
+#about .container p a:hover {
   text-decoration: underline;
 }
 
-#about .container .wrap p span {
+#about .container p span {
   color: #f7a400;
+}
+
+#about .container .wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  gap: 5vw;
+}
+
+#about .container .wrap .study {
+  border-left: 10px solid #f7a400;
+  padding-left: 5px;
+  margin: 15px;
+  margin-left: 0px;
+  color: white;
+}
+
+#about .container .wrap .college {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 25px;
+  font-weight: 500;
+  margin: 5px auto;
+}
+
+#about .container .wrap .cgpa {
+  color: #f7a400;
+  font-style: italic;
+  font-size: 14px;
+}
+
+#about .container .wrap .course {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 18px;
+  font-weight: 500;
+  margin: 5px auto;
+}
+
+#about .container .wrap .branch {
+  font-family: "Ubuntu", sans-serif;
+  font-size: 16px;
+  font-weight: 500;
+  margin: 5px auto;
 }
 
 #skills {
@@ -344,7 +400,8 @@ header nav .contact:hover {
   position: fixed;
   top: 0;
   z-index: -10;
-  background-color: #1a1b4b;
+  background-color: #000433;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='268' height='268' viewBox='0 0 800 800'%3E%3Cg fill='none' stroke='%23404' stroke-width='2.5'%3E%3Cpath d='M769 229L1037 260.9M927 880L731 737 520 660 309 538 40 599 295 764 126.5 879.5 40 599-197 493 102 382-31 229 126.5 79.5-69-63'/%3E%3Cpath d='M-31 229L237 261 390 382 603 493 308.5 537.5 101.5 381.5M370 905L295 764'/%3E%3Cpath d='M520 660L578 842 731 737 840 599 603 493 520 660 295 764 309 538 390 382 539 269 769 229 577.5 41.5 370 105 295 -36 126.5 79.5 237 261 102 382 40 599 -69 737 127 880'/%3E%3Cpath d='M520-140L578.5 42.5 731-63M603 493L539 269 237 261 370 105M902 382L539 269M390 382L102 382'/%3E%3Cpath d='M-222 42L126.5 79.5 370 105 539 269 577.5 41.5 927 80 769 229 902 382 603 493 731 737M295-36L577.5 41.5M578 842L295 764M40-201L127 80M102 382L-261 269'/%3E%3C/g%3E%3Cg fill='%23505'%3E%3Ccircle cx='769' cy='229' r='11'/%3E%3Ccircle cx='539' cy='269' r='11'/%3E%3Ccircle cx='603' cy='493' r='11'/%3E%3Ccircle cx='731' cy='737' r='11'/%3E%3Ccircle cx='520' cy='660' r='11'/%3E%3Ccircle cx='309' cy='538' r='11'/%3E%3Ccircle cx='295' cy='764' r='11'/%3E%3Ccircle cx='40' cy='599' r='11'/%3E%3Ccircle cx='102' cy='382' r='11'/%3E%3Ccircle cx='127' cy='80' r='11'/%3E%3Ccircle cx='370' cy='105' r='11'/%3E%3Ccircle cx='578' cy='42' r='11'/%3E%3Ccircle cx='237' cy='261' r='11'/%3E%3Ccircle cx='390' cy='382' r='11'/%3E%3C/g%3E%3C/svg%3E");
   display: -ms-grid;
   display: grid;
   -ms-grid-rows: 1fr 1fr 1fr 1fr 1fr;
@@ -535,6 +592,9 @@ header nav .contact:hover {
 
 #projects {
   background-color: #292a73;
+  background-image: url("data:image/svg+xml,<svg id='patternId' width='100%' height='100%' xmlns='http://www.w3.org/2000/svg'><defs><pattern id='a' patternUnits='userSpaceOnUse' width='58' height='100.23' patternTransform='scale(5) rotate(40)'><rect x='0' y='0' width='100%' height='100%' fill='hsla(214,85.1%,13.1%,1)'/><path d='M.111-33.307l-28.997 16.744zm.012.006l28.993 16.738-.004 33.485L.115 33.492l-28.997-16.57.004-33.485m40.992 43.198v-5.672l4.937 2.85M29.113 9.995L12.117.18l17-9.815M6.114 30.062L6.114 10.57l16.967 9.798m-51.963-3.446l57.998-33.485m-29 50.055l-.005-66.8m29.001 50.23l-57.99-33.485m57.992 19.63l-5-2.887 5.002-2.887m28.872-30.805L28.99-16.768zm.012.006l28.993 16.738-.004 33.485-28.997 16.57-28.997-16.57.004-33.485m-.004 33.485l57.998-33.485M57.992 33.287l-.004-66.799m29 50.229C67.615 5.529 48.285-5.633 28.999-16.768M28.998 2.86l4.998-2.886-4.998-2.886m6.029 23.076l16.964-9.794.002 19.49m-6-3.43v-5.67l-4.936 2.85M28.995 9.789L45.994-.026 28.998-9.84M-.003 66.943L-29 83.687zm.012.006l28.993 16.738-.004 33.485m0 0L.001 133.742m0 0l-28.997-16.57m0 0l.004-33.485m57.991 26.557l-16.996-9.814 17-9.815m-58 26.557l57.999-33.485M.001 133.742l-.004-66.8m29.001 50.23l-57.99-33.485m45.994-6.928l-5.005 2.89V73.87m11.005 6.353L5.999 90.04l-.002-19.633M29 103.317l-5-2.887 5.002-2.887m28.99-30.6L28.993 83.687zm.011.006l28.993 16.738-.004 33.485m0 0l-28.997 16.57m0 0l-28.997-16.57m0 0l.004-33.485m22.99-13.28v19.627l-16.995-9.813m-5.999 36.95l57.998-33.484m-29 50.055l-.005-66.8m29.001 50.23l-57.99-33.485M29 103.314L34 100.428 29 97.542m11.996-20.786l4.996 2.885v-5.77m-16.994 36.373l17-9.815L29 90.615M57.998 66.94l-.003-33.484zm-.012.008l-28.992 16.74L-.002 66.94l.148-33.397 28.849-16.827L57.99 33.463M.084 47.363L4.997 50.2.06 53.05m5.936 17.356l16.998-9.812v19.63m35.003-20.212L41 50.2l16.996-9.812m-57.878.067l16.88 9.745L.03 59.996m28.966-43.28v66.971M.144 33.544L57.999 66.94m-58 .001L57.99 33.463M40.994 76.759v-5.78l5.004 2.89m-5.004-50.221v5.772l5-2.886m-11 53.689V60.589l17.004 9.815m-40.003 3.467l5-2.887v5.775m41.002-29.444L53 50.2l4.998 2.885M22.995 20.217v19.589l-16.88-9.744m5.97-3.481l4.91 2.835v-5.7m18-3.535v19.63l16.997-9.813'  stroke-linecap='square' stroke-width='3' stroke='hsla(311,39.4%,19.4%,1)' fill='none'/></pattern></defs><rect width='800%' height='800%' transform='translate(0,0)' fill='url(%23a)'/></svg>");
+  background-position: center;
+  background-size: cover;
   display: -ms-grid;
   display: grid;
   place-items: center;

@@ -2,46 +2,88 @@
 
 #about {
   background-color: #000000;
-  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23230046' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%232f0052' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%233b075e' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%2348156a' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23552277' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100%25' height='100%25' viewBox='0 0 800 800'%3E%3Cg %3E%3Ccircle fill='%23000000' cx='400' cy='400' r='600'/%3E%3Ccircle fill='%23000449' cx='400' cy='400' r='500'/%3E%3Ccircle fill='%23001053' cx='400' cy='400' r='400'/%3E%3Ccircle fill='%230c185d' cx='400' cy='400' r='300'/%3E%3Ccircle fill='%231c2168' cx='400' cy='400' r='200'/%3E%3Ccircle fill='%23292A73' cx='400' cy='400' r='100'/%3E%3C/g%3E%3C/svg%3E");
   background-attachment: fixed;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
 
+  min-height: 100vh;
+  color: whitesmoke;
+  // overflow: hidden;
+
+  h2 {
+    font-family: "Raleway", sans-serif;
+    font-size: 30px;
+    margin-left: 10px;
+  }
   .container {
-    height: 100vh;
+    height: 100%;
+    padding: 5vh 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
     margin: auto;
-    color: whitesmoke;
-    text-align: center;
-    display: grid;
-    place-items: center;
 
-    .wrap {
-      flex-wrap: wrap;
+    p {
+      font-family: "Ubuntu", sans-serif;
+      font-size: 20px;
+      line-height: 30px;
 
-      h2 {
-        font-family: "Raleway", sans-serif;
-        font-size: 30px;
-        margin-bottom: 20px;
+      a {
+        color: $typecolor;
+        text-decoration: none;
+
+        &:hover {
+          text-decoration: underline;
+        }
       }
 
-      p {
+      span {
+        color: $typecolor;
+      }
+    }
+    .wrap {
+      display: flex;
+      justify-content: space-evenly;
+      align-items: center;
+      gap: 5vw;
+
+      .study {
+        border-left: 10px solid $typecolor;
+        padding-left: 5px;
+        margin: 15px;
+        margin-left: 0px;
+        color: white;
+      }
+
+      .college {
         font-family: "Ubuntu", sans-serif;
-        font-size: 20px;
-        line-height: 30px;
+        font-size: 25px;
+        font-weight: 500;
+        margin: 5px auto;
+      }
 
-        a {
-          color: $typecolor;
-          text-decoration: none;
+      .cgpa {
+        color: $typecolor;
+        font-style: italic;
+        font-size: 14px;
+      }
 
-          &:hover {
-            text-decoration: underline;
-          }
-        }
+      .course {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 18px;
+        font-weight: 500;
+        margin: 5px auto;
+      }
 
-        span {
-          color: $typecolor;
-        }
+      .branch {
+        font-family: "Ubuntu", sans-serif;
+        font-size: 16px;
+        font-weight: 500;
+        margin: 5px auto;
       }
     }
   }
