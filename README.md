@@ -3,7 +3,7 @@
 
 - 🌱 I’m currently learning **Machine Learning**
 
-- 👨‍💻 All of my projects are available at **[prajapathi.github.io](https://www.prajapathi.github.io)**
+- 👨‍💻 All of my projects are available at **[prajapathi.github.io](https://prajapathi.github.io/)**
 
 - 💬 Ask me about **React**
 
