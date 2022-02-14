@@ -11,7 +11,7 @@
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
-<a href="https://linkedin.com/in/syam kumar yadavalli" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="syam kumar yadavalli" height="30" width="40" /></a>
+<a href="https://www.linkedin.com/in/syam-yadavalli-9701551a7/" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="syam kumar yadavalli" height="30" width="40" /></a>
 <a href="https://instagram.com/prajapathi.jsx" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="prajapathi.jsx" height="30" width="40" /></a>
 <a href="https://www.hackerrank.com/@yadavallisyam1" target="blank"><img align="center" src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/hackerrank.svg" alt="@yadavallisyam1" height="30" width="40" /></a>
 </p>
